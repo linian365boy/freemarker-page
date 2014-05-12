@@ -1,0 +1,13 @@
+.numbertable{
+    width:613px;}
+    
+.history_table{
+    margin-top:5px;
+    width:611px;
+    border:1px solid #CCCCCC;
+    background-color:#FFFFFF;
+    border-collapse:collapse;
+    color:#FFFFFF;}
+.btn_history{color:#333333;line-height:20px;cursor:pointer;}
+.td_bold{border:1px solid #CCCCCC; text-align:center; color:#333333; font-weight:bold;} 
+.td_normal{border:1px solid #CCCCCC; text-align:center; color:#333333;}
