@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="brightengold furniture,brightengold,furniture, Hotel furniture, dining tables, restaurant furniture, hotel furniture accessories, decorative furniture">
+<meta name="description" content="Welcome to the home of Brightengold Furniture, a leader in contemporary furniture design in China! Our sofa suites, dining table and other furniture are well-received in hotels and restaurants.">
+<script type="text/javascript" src="http://localhost:80/resources/js/jquery-1.8.3.js"></script>
+<title>China Voice: China facing long way from world's No.1 economy|Brightengold Furniture</title>
+<script type="text/javascript">
+	var content=new Object;  
+	var context="";//HTML文本内容  
+	var pgindex=[];//存储分页位置的数组  
+	var cont=[];//存储分段内容  
+	var pagesel="";//生成分页标签时用  
+	var contpg=0;//页号
+	$(document).ready(function(){
+		initpg();
+		searchpg();
+	});
+	
+    function initpg(){
+	    contpg=0;  //置空变量  
+	    pgindex.splice(0,pgindex.length);  
+	    pgindex[0]=0;  
+	    cont.splice(0,cont.length);  
+	    pagesel="";  
+	    content=document.getElementById("nc_con");  //获取节点HTML文本内容，搜索所有分页标签出现位置  
+	    context=content.innerHTML;  
+		var i=0;  
+		var j=1;  
+		var tmpp=0;  
+	    
+   	    while(tmpp=context.indexOf("<div style=\"page-break-after: always",i)){  
+   	        if(tmpp!=-1){  
+   	            pgindex[j++]=tmpp;  
+   	            i=tmpp+30;  
+   	        }else{  
+   	            break;  
+   	        }  
+   	    }     
+	}
+	
+    function searchpg(){  
+    if(pgindex.length>1){  
+        
+        for(var i=0;i<pgindex.length;i++)  
+        {  
+         cont[i]=context.substring(pgindex[i],pgindex[i+1]);  
+        }  
+        pagese();  
+        content.innerHTML=cont[0];  
+        document.getElementById("nc_page").innerHTML=pagesel;//换页使用的按钮内容输出在id=nc_page元素下  
+    }else  
+    pagese();  
+    document.getElementById("nc_page").innerHTML=pagesel;  
+}  
+    
+    function pagese(){  
+        if(cont.length>0){  
+            if(contpg==0){  
+                pagesel="First &nbsp;&nbsp; Previous &nbsp;&nbsp;<a href='#' onclick='nextpa()'>Next</a> &nbsp;&nbsp; <a href='#' onclick='endpa()'>Last</a>";  
+            }else if(contpg!=0&&contpg<cont.length-1){  
+                pagesel="<a href='#' onclick='firstpa()'>First</a>&nbsp;&nbsp; <a href='#' onclick='prepa()'>Previous</a> &nbsp;&nbsp; <a href='#' onclick='nextpa()'>Next</a>&nbsp;&nbsp; <a href='#' onclick='endpa()'>Last</a>";  
+            }else if(contpg==cont.length-1){  
+                pagesel="<a href='#' onclick='firstpa()'>First</a>&nbsp;&nbsp; <a href='#' onclick='prepa()'>Previous</a>&nbsp;&nbsp; Next &nbsp;&nbsp; Last";  
+            }  
+        }  
+    }
+    
+    function nextpa(){
+    	contpg++;
+    	pagese();		
+    	content.innerHTML=cont[contpg];
+    	document.getElementById("nc_page").innerHTML=pagesel;
+    	
+    }
+    function prepa(){
+    	contpg--;
+    	pagese();
+    	content.innerHTML=cont[contpg];
+    	document.getElementById("nc_page").innerHTML=pagesel;
+    }
+    function firstpa(){
+    	contpg=0;
+    	pagese();
+    	content.innerHTML=cont[contpg];
+    	document.getElementById("nc_page").innerHTML=pagesel;
+    }
+    function endpa(){
+    	contpg=cont.length-1;
+    	pagese();
+    	content.innerHTML=cont[contpg];
+    	document.getElementById("nc_page").innerHTML=pagesel;
+    }
+    
+</script>
+</head>
+  <body>
+	<div class="clear"></div>
+<div id="container"> 
+  <div id="center"> 
+  <div style="left: 100px ! important;" class="Z_TypeList" id="Z_TypeList">
+    <h1 class="title">Product categories<s class="btn_group bleft"><a class="bleft"></a><a class="bright"></a></s></h1>
+    <div class="footerlist">
+     </div>
+  </div>
+  <script type="text/javascript" src="/resources/js/jquery.tmailsider.js"></script>
+<script type="text/javascript">
+    $('#Z_TypeList').Z_TMAIL_SIDER();
+</script>
+<div class="etw_hometitle">
+<img width="665px" height="28" border="0" src="/resources/images/news.jpg"/></div>
+<div id="etw_right"> 
+  <div class="wrapper cFloat">
+	<div class="content">
+        <div class="fl cFloat" id="left">
+        	<div class="info_text">
+            	<h1>China Voice: China facing long way from world's No.1 economy</h1>
+                <div class="titBar">Hits:<span id="clickcount">0</span> | Publish Date：2014-05-25</div>
+                <div class="bd cFloat">
+                	                	<div class="introduction"><strong>Abstract:</strong>&#12288;&#12288;BEIJING, May 5 (Xinhua) -- As the speculation over when China will overtake the United States as the world's largest economy rumbles on, China is more aware of the quality of its economy, rather than the sheer size.</div>
+					                    <div id="nc_con" class="bd-content" style="word-wrap: break-word;word-break: normal; margin:40px ">
+					                    <p style="text-align:left">China&#39;s GDP was nearly 87 percent of the United States in 2011 based on so-called purchasing power parity (PPP), said a World Bank report in the past week, and headlines across the globe duly began trumpeting that more than a century of American economic dominance was all but over.</p>
+
+<p style="text-align:left">China has dramatically outpaced the U.S. in economic expansion in recent years, with their latest GDP growth rates in the first quarter of 2014 standing at 7.4 percent and 0.1 percent respectively.</p>
+
+<p style="text-align:left">But in real terms there remains a tremendous gap. Last year, China&#39;s GDP was estimated to be 9.3 trillion U.S. dollars while the U.S. reached 16.8 trillion.</p>
+
+<p style="text-align:left">The PPP measurement takes into consideration the purchasing power of a country&#39;s currency rather than market exchange rates, but is a hypothetical calculation that assumes one price level across all countries.</p>
+
+<p style="text-align:left">PPP is widely seen as of secondary relevance for most business and financial market purposes, and it is worth noting that China&#39;s National Bureau of Statistics has expressed reservations about the methodology used, refusing to publish the headline results for China, according to the World Bank report.</p>
+
+<p style="text-align:left">Per capita GDP is more relevant to the Chinese people - 1.3 billion of them. By that measure, China is still far, far behind the industrialized world in economic output and all other economic indicators.</p>
+
+<p style="text-align:left">Absolute figures reveal little of the differences between the Main Streets of China and others. This country has come a long way, but it remains - undeniably - a developing country with too many fish to fry.</p>
+
+<p style="text-align:left">Some challenges confront China enough, threatening its development sustainability and compelling the country to think less about growth.</p>
+
+<p style="text-align:left">For example, in the iron and steel industry, once the country&#39;s backbone, overcapacity is severe and filthy foundries are eating up energy and polluting the environment. It is simply no longer viable to prop up production in the name of good output numbers.</p>
+
+<p style="text-align:left">Indeed, China has arrived at the conclusion that it is time to part ways with GDP obsession - something worth drawing a lesson or two from, for those who have yet to take notice.</p>
+
+                    </div>
+                    <div class="info-text-foot cFloat">
+                		<div class="fl">
+                		Tag:
+                			china,economy
+                			
+                		</div>
+					</div>
+                    <div class="hq-pagination hq-pagination-centered">
+            			<div id="nc_page"></div>
+            		</div><!--end hq-pagination-->
+					<!-- Baidu Button END -->
+                 </div><!--end bd-->
+		</div><!--end info_text-->
+    </div><!--end left-->
+ </div><!--end content-->
+</div>
+</div>
+</div>
+</div>
+  </body>
+</html>

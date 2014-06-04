@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size: 14px;
+	font-family: Arial, Tahoma, Verdana;
+}
+img{
+	border:0;
+	margin:1px;
+}
+p{
+	padding:3px;
+}
+#footer{
+	clear:both;
+	position:fixed; 
+	height:24px; 
+	width:100%;
+	line-height:24px; 
+	text-align:center; 
+	 border-top:1px solid #fff; 
+	 bottom:-4px; 
+	 left:0px;
+	 _position:absolute;
+}
+#footer ul {
+	list-style:none;
+}
+#footer li {
+	display:inline;
+}
+
+form{
+	margin-top: 10px;
+}
+
+form#form label.error{
+	background:url(/resources/images/x.png) no-repeat 0px 0px;
+	display: inline;
+	padding-left:18px;
+	color: red;
+	width:auto;
+	font-weight:normal;
+} 
